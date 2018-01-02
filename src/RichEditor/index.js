@@ -1,12 +1,22 @@
 import React from 'react';
-import { Editor, EditorState, CompositeDecorator, RichUtils, getDefaultKeyBinding, KeyBindingUtil, convertFromRaw, convertToRaw } from 'draft-js';
+import { 
+  Editor, // 用于创建draft编辑器
+  EditorState, // 用户对draft内部状态的操作接口
+  CompositeDecorator, // 装饰器创建方法
+  RichUtils, // 功能集合
+  getDefaultKeyBinding, // 默认快捷键
+  KeyBindingUtil, 
+  convertFromRaw, 
+  convertToRaw 
+} from 'draft-js';
 
-
+// inline-block 样式组建以及匹配规则
 import Link from '../components/Link'
 import { findLinkEntities, addLink } from '../modifiers/link'
 import Mention from '../components/Mention'
 import { findMentionEntities } from '../modifiers/mention'
 
+// block 样式组建以及匹配规则
 import MediaBlock from '../components/MediaBlock'
 import { addImage } from '../modifiers/image'
 
