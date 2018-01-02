@@ -10,6 +10,34 @@ import {
   convertToRaw 
 } from 'draft-js';
 
+/*
+ inline-block 组件
+  Link
+  Mention
+  
+ block 组件
+  MediaBlock
+  
+ Util 组件
+  counter
+  
+ rew 数据
+  rawContent
+  
+ block 样式绑定 getBlockStyle
+  更具 block type 类型为其绑定类型
+  'blockquote' ＝> 'RichEditor-blockquote';
+  
+ CompositeDecorator 用于绑定inline-block 与 装饰器绑定
+  
+ myMediaBlockRenderer
+  用于 block 组件绑定
+  
+ myKeyBindingFn
+  定义快捷键
+ 
+*/
+
 // inline-block 样式组建以及匹配规则
 import Link from '../components/Link'
 import { findLinkEntities, addLink } from '../modifiers/link'
